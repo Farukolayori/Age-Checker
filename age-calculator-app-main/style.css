@@ -1,0 +1,110 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(240, 240, 240);
+}
+.Container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 90vh;
+}
+.Inputs{
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+.Check1,.Check2,.Check3{
+display: flex;
+flex-direction: column;
+}
+.Wrapper{
+    display: flex;
+    align-items: center;
+    background-color: white;
+    padding: 100px 40px;
+    border-radius: 8px;
+    border: none;
+    
+}
+label{
+    letter-spacing: 3px;
+    color: rgb(104, 100, 100);
+    font-weight: bolder;
+    font-size: 13px;
+    font-family: monospace;
+}
+
+input{
+    width: 100px;
+    height: 50px;
+    display: flex;
+    align-items: flex-start;
+    padding: 0 20px;
+    border-radius: 5px;
+    font-size: 30px;
+    font-weight: bolder;
+    /* text-align: center; */
+    border: 1px solid rgb(235, 231, 231);
+}
+
+input::placeholder{
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    font-size: 20px;
+}
+
+img{
+    background-color: rgb(56, 56, 209);
+    border-radius: 100%;
+    padding: 8px;
+}
+img:hover {
+    cursor: pointer;
+    background-color: rgb(80, 80, 240);
+    transition: background-color 0.3s ease;
+}
+
+.Form{
+/* margin: 50px 0; */
+}
+.GetAges{
+    position: relative;
+    top: 50px;
+}
+.Years h1{
+    font-size: 50px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
+.Month h1{
+       font-size: 50px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.Days h1{
+       font-size: 50px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+span{
+    color: rgb(56, 56, 209);
+    font-size: 60px;
+    font-weight: bolder;
+}
+@media (max-width: 600px) {
+    .Inputs {
+        flex-direction: column;
+        gap: 20px;
+    }
+    .Wrapper {
+        flex-direction: column;
+        padding: 60px 20px;
+    }
+    .Arrow__Image {
+        margin-left: 0;
+        margin-top: 20px;
+    }
+}
